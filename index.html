@@ -6,14 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Zee Email Templates</title>
     <style type="text/css">
-      :root {
-        --border-radius: 0.2rem;
-        --bg-color: #fff;
-        --color-blue: #00386c;
-        --color-red: #cd0000;
-        --color-cyan: #33cccc
-      }
-
+    
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap');
+    
       body {
         padding: 0;
         margin: 0
@@ -40,11 +35,11 @@
         text-align: justify;
         text-justify: inter-character;
         font-size: clamp(12px, .8rem, 20px);
-        font-weight: 400;
+        font-weight: 500;
         line-height: 150%;
-        font-family: Helvetica, sans-serif;
-        color: var(--color-blue);
-        background-color: var(--bg-color);
+        font-family: 'Montserrat', sans-serif;
+        color: #00386c;
+        background-color: #fff;
         z-index: -3
       }
 
@@ -58,7 +53,7 @@
         background-repeat: repeat;
         background-size: contain;
         background-position: center;
-        background-color: var(--bg-color);
+        background-color: #000;
         border-radius: .8em;
         overflow: hidden;
         box-shadow: 0 0 3em rgba(0, 0, 0, .1);
@@ -72,19 +67,23 @@
         left: 0;
         width: 100%;
         opacity: 80%;
+        background-image: url(https://i.imgur.io/pmfcbke_d.webp);
+        background-repeat: repeat;
+        background-size: contain;
+        background-position: center;
         height: 3em;
         z-index: -1
       }
 
       .main::before {
         top: -.2em;
-        background-color: var(--color-blue);
+        background-color: #00386c;
         box-shadow: 0 0 8em rgba(0, 80, 200, .2)
       }
 
       .main::after {
-        bottom: 0;
-        background-color: var(--color-red);
+        bottom: -.2em;
+        background-color: #cd0000;
         box-shadow: 0 0 8em rgba(200, 0, 0, .2)
       }
 
@@ -95,21 +94,20 @@
       .divider {
         text-align: center;
         width: 90%;
-        border-top: .5px solid var(--color-blue);
+        border-top: .5px solid #00386c;
         margin: 3em auto;
         opacity: .1
       }
 
       .bigger-fonts {
-        font-size: .9em;
         line-height: 100%;
-        font-weight: 800
+        font-weight: 900
       }
 
       .smaller-fonts,
       a {
-        font-size: .7em;
-        line-height: 120%
+        line-height: 120%;
+        font-weight: 400
       }
 
       .name {
@@ -117,7 +115,7 @@
       }
 
       .pos {
-        color: var(--color-red)
+        color: #cd0000
       }
 
       a,
@@ -133,7 +131,7 @@
 
       a {
         text-decoration: none;
-        color: var(--color-cyan)
+        color: #33cccc
       }
 
       .combiner {
@@ -142,7 +140,7 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 3em
+        row-gap: 3em
       }
 
       .sig {
@@ -155,6 +153,7 @@
 
       .company-brand {
         flex-direction: row;
+        row-gap: .8em
       }
 
       .company-brand,
@@ -163,7 +162,7 @@
         align-items: flex-start;
         justify-content: space-around;
         flex-wrap: wrap;
-        gap: .8em;
+        column-gap: .8em;
         width: max-content
       }
 
@@ -174,8 +173,8 @@
 
       .logo-container {
         position: relative;
-        width: 45px;
-        height: 50px;
+        width: 3.125rem;
+        height: 3.125rem;
         overflow: hidden
       }
 
@@ -192,7 +191,7 @@
 
       .letter-H {
         position: absolute;
-        border-radius: var(--border-radius)
+        border-radius: 0.2rem
       }
 
       .letter-C {
@@ -202,12 +201,12 @@
       }
 
       .logo-H {
-        background-color: var(--color-blue)
+        background-color: #00386c
       }
 
       .vh {
         height: 100%;
-        width: 30%
+        width: 35%
       }
 
       .hh {
@@ -225,10 +224,10 @@
       .hh::before {
         content: '';
         position: absolute;
-        width: 50%;
-        background-color: var(--bg-color);
-        border-radius: var(--border-radius);
-        left: 25%
+        width: 45%;
+        background-color: #fff;
+        border-radius: 0.2rem;
+        left: 28%
       }
 
       .hh::before {
@@ -243,13 +242,13 @@
         height: 36%;
         width: 38%;
         overflow: hidden;
-        border-radius: var(--border-radius)
+        border-radius: 0.2rem
       }
 
       .logo-C {
         height: 100%;
         width: 100%;
-        background-color: var(--color-red)
+        background-color: #cd0000
       }
 
       .hc {
@@ -266,10 +265,12 @@
     <div class="wrapper">
       <div class="main">
         <div class="body">
-          <div class="main-before"></div>
-          <div class="main-after"></div>
           <p class="msg" contenteditable="true">Dear [Subcontractor's Contact Person], <br>
-            <br>I am writing in regards to the pre-employment requirements submitted by the employees of [Subcontractor's Company Name]. I have reviewed the medical report documents and can confirm that all of the submitted documents are complete and legitimate.
+            <br>Thank you for your email. This serves as confirmation that I have received and reviewed the medical reports that you have submitted. I can confirm that all submitted documents are complete and legitimate. There are no medical findings that would prevent any of the applicants from being hired or deployed to the site. I will now forward the documents to our HR department for further review and verification.<br><br>
+
+Please let me know if you have any further questions or concerns.
+
+Thank you for your cooperation.
           </p>
           <hr class="divider">
         </div>
