@@ -54,9 +54,10 @@
         background-size: contain;
         background-position: center;
         background-color: #fff;
+        z-index: -2;
         box-shadow: 0 0 2em rgba(0, 0, 0,
-        .2), 0 5em 15em 5em rgba(200, 0, 0, .2);
-        z-index: -2
+        .2), 0 5em 15em 5em rgba(200, 0, 0, .2), 0 -5em 15em 5em rgba(0, 120,
+        200, .5)
       }
 
       .main::after,
@@ -74,15 +75,14 @@
         top: -.2em;
         background-color: #00386c;
         border-radius:.8em .8em 0 0;
-        box-shadow: 0 -5em 15em 5em rgba(0, 120,
-        200, .5)
+        /*box-shadow: */
       }
 
       .main::after {
         bottom: -.2em;
         background-color: #cd0000;
         border-radius:0 0 .8em .8em;
-        box-shadow: 0 5em 15em 5em rgba(200, 0, 0, .2)
+        /*box-shadow: 0 5em 15em 5em rgba(200, 0, 0, .2)*/
       }
 
       .msg {
