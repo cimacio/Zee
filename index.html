@@ -34,7 +34,6 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        table-layout: fixed;
         box-sizing: border-box;
         text-align: justify;
         text-justify: inter-character;
@@ -129,13 +128,31 @@
       .sig {
         margin-bottom: 3em;
       }
+      
+      .company-brand {
+        width: 100%;
+        margin: 0 auto;
+      }
     
+       .company-brand, 
+       .company-details, 
+       .logo-container {
+         height: 2.35rem;
+         position: inline-block
+      }
+      
+      .company-details {
+        background-color: yellow;
+        width: 80%;
+      }
+
       .logo-container {
-        float: left;
-        margin-right: 1em;
+        width: 12%;
+        background-color: yellow;
       }
       
       .logo {
+        opacity: 0.3;
         height: 100%
       }
       
