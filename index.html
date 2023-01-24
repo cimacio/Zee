@@ -43,7 +43,7 @@
         font-family: 'Montserrat', sans-serif;
         color: #00386c;
         background-color: #fff;
-        z-index: -4
+        z-index: -999
       }
 
       .main {
@@ -53,16 +53,11 @@
         padding: clamp(4em, 6%, 6em);
         margin: clamp(4em, 6%, 8em) auto;
         background-color: #fff;
-        border-radius: 1em;
-        /*z-index: -1;*/
-        /*box-shadow: 0 0 2em rgba(0, 0, 0,*/
-        /*.2), 10em 10em 100em rgba(200, 0, 0, .3),*/
-        /*-10em -10em 100em rgba(0, 120,*/
-        /*200, .5)*/
+        border-radius: 1em
       }
 
-      .main::after,
-      .main::before {
+      .main-after,
+      .main-before {
         content: '';
         position: absolute;
         top: -0.1em;
@@ -73,10 +68,10 @@
         background: linear-gradient(235deg,
        #31ffff, #fff, #ff3131);
         background-color: #fff;
-        z-index: -2
+        z-index: -1
       }
 
-      .main::after {
+      .main-after {
         filter: blur(3em);
       }
 
