@@ -37,12 +37,12 @@
         box-sizing: border-box;
         text-align: justify;
         text-justify: inter-character;
-        font-size: 0.5rem;
+        font-size: 0.8rem;
         font-weight: 500;
         font-family: 'Montserrat', Helvetica, sans-serif;
         color: #00386c;
         background-color: #fff;
-        z-index: -999
+        z-index: -9
       }
 
       .main {
@@ -57,7 +57,6 @@
 
       .main-after,
       .main-before {
-        content: '';
         position: absolute;
         top: -0.1em;
         bottom: -0.1em;
@@ -89,7 +88,7 @@
       }
 
       .bigger-fonts {
-        font-size: 1.29em;
+        font-size: 1.29rem;
         line-height: 100%;
         font-weight: 700
       }
@@ -134,27 +133,20 @@
         text-align: center;
       }
     
-       .company-brand, 
        .company-details, 
-       .logo-container .logo{
-         height: 2.35rem
+       .logo-container {
+         display: inline-block;
+         margin: 0.3em;
+         height: 2.35rem;
+         width: max-content;
       }
       
       .company-details {
-        text-align: left;
-        width: 80%;
-        background-color: yellow
-      }
-
-      .logo-container {
-        width: 12%;
-        background-color: yellow
+        text-align: left
       }
       
       .logo {
-        display: inline-block ;
-        opacity: 0.3;
-        height: 100%;
+        height: 100%
       }
       
     </style>
