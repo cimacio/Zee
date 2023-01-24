@@ -35,13 +35,6 @@
         height: 100%;
         position: absolute;
         box-sizing: border-box;
-        font-size: clamp(10px, 2vw, 22px);
-        line-height: 150%;
-        text-align: justify;
-        text-justify: inter-character;
-        font-weight: 500;
-        font-family: 'Montserrat', Helvetica, sans-serif;
-        color: #00386c;
         background-color: #fff;
         z-index: -9
       }
@@ -51,8 +44,15 @@
         /*max-width: 600px;*/
         /*min-width: 300px;*/
         width: clamp(300px, 60vw, 600px);
-        padding: clamp(30px, 6vw, 40%);
-        margin: clamp(30px, 6vw, 40%) auto;
+        padding: clamp(35px, 6vw, 40%);
+        margin: clamp(35px, 6vw, 40%) auto;
+        font-size: clamp(10px, 2vw, 22px);
+        line-height: 150%;
+        text-align: justify;
+        text-justify: inter-character;
+        font-weight: 500;
+        font-family: 'Montserrat', Helvetica, sans-serif;
+        color: #00386c;
         background-color: #fff;
         border-radius: 2%
       }
@@ -72,21 +72,21 @@
       }
 
       .main-after {
-        filter: blur(3rem);
+        filter: blur(5vw)
       }
 
       .msg {
         line-height: 150%;
         outline: 0;
-        margin: 3rem 0
+        margin: 10% 0
       }
 
       .divider {
         text-align: center;
         width: 80%;
-        border-top: .25vw solid #33cccc;
-        margin: 1.5rem auto;
-        opacity: .1
+        border-top: 5% solid #33cccc;
+        margin: 2% auto;
+        opacity: .2
       }
 
       .bigger-fonts {
@@ -116,7 +116,6 @@
       h4,
       h5,
       p {
-        color: #00386c;
         text-decoration: none;
         margin: 0;
         padding: 0
