@@ -35,7 +35,7 @@
         height: 100%;
         position: absolute;
         box-sizing: border-box;
-        font-size: clamp(12px, 2.5vw, 22px);
+        font-size: clamp(10px, 2vw, 20px);
         text-align: justify;
         text-justify: inter-character;
         font-weight: 500;
@@ -47,10 +47,10 @@
 
       .main {
         position: relative;
-        max-width: 600px;
-        min-width: 300px;
-        width: 25rem + 1px;
-        padding: 4rem;
+        /*max-width: 600px;*/
+        /*min-width: 300px;*/
+        width: clamp(300px, 60vw, 600px);
+        padding: 35px;
         margin: 4rem auto;
         background-color: #fff;
         border-radius: 1rem
@@ -94,7 +94,7 @@
       }
 
       .smaller-fonts {
-        font-size: 0.7rem;
+        font-size: 80%;
         opacity: 60%;
         line-height: 120%;
         font-weight: 400
