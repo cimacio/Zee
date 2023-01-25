@@ -42,9 +42,9 @@
       .main {
         position: relative;
         width: clamp(280px, 55vw, 580px);
-        padding: clamp(35px, 6vw, 45%);
-        margin: clamp(40px, 8vw, 50%) auto;
-        font-size: clamp(9px, 2vw, 20px);
+        padding: clamp(40px, 6vw, 40%);
+        margin: clamp(60px, 8vw, 60%) auto;
+        font-size: clamp(8px, 2vw, 20px);
         line-height: 150%;
         text-align: justify;
         text-justify: inter-character;
@@ -58,24 +58,19 @@
       .main-after,
       .main-before {
         position: absolute;
-        top: -0.5%;
-        bottom: -0.5%;
-        left: -0.5%;
-        right: -0.5%;
+        top: -0.3%;
+        bottom: -0.3%;
+        left: -0.3%;
+        right: -0.3%;
         border-radius: 2.5%;
-        background-color: #fff;
-        z-index: -1
-      }
-      
-      .main-before {
         background: linear-gradient(-235deg,
         #31ffff, #fff, #fff, #ff3131);
+        background-color: #fff;
+        z-index: -1
       }
 
       .main-after {
         filter: blur(5vw);
-        background: linear-gradient(235deg,
-        #31ffff, #fff, #fff, #ff3131);
       }
 
       .msg {
@@ -105,7 +100,7 @@
       }
 
       .name {
-        padding-top: clamp(40px, 8vw, 45%)
+        padding-top: clamp(40px, 6vw, 40%)
       }
 
       .pos {
