@@ -42,36 +42,40 @@
       .main {
         position: relative;
         width: clamp(280px, 55vw, 580px);
-        padding: clamp(20px, 4vw, 30%);
-        margin: clamp(70px, 12vw, 80%) auto;
-        font-size: clamp(10px, 2vw, 22px);
+        padding: clamp(35px, 6vw, 45%);
+        margin: clamp(40px, 8vw, 50%) auto;
+        font-size: clamp(9px, 2vw, 20px);
         line-height: 150%;
         text-align: justify;
         text-justify: inter-character;
         font-weight: 500;
         font-family: 'Montserrat', Helvetica, sans-serif;
         color: #00386c;
-        background-color: rgba(255,255,255,0.05);
-        drop-filter: blur(5vw);
-        border-radius: 6%
+        background-color: #fff;
+        border-radius: 2%
       }
 
       .main-after,
       .main-before {
         position: absolute;
-        top: -6%;
-        bottom: -6%;
-        left: -8%;
-        right: -8%;
-        border-radius: 4%;
-        background: linear-gradient(-235deg,
-        #1F51FF, #fff, #fff, #ff3131);
+        top: -0.5%;
+        bottom: -0.5%;
+        left: -0.5%;
+        right: -0.5%;
+        border-radius: 2.5%;
         background-color: #fff;
         z-index: -1
       }
+      
+      .main-before {
+        background: linear-gradient(-235deg,
+        #31ffff, #fff, #fff, #ff3131);
+      }
 
       .main-after {
-        filter: blur(5vw)
+        filter: blur(5vw);
+        background: linear-gradient(235deg,
+        #31ffff, #fff, #fff, #ff3131);
       }
 
       .msg {
