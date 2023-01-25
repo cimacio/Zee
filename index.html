@@ -41,9 +41,8 @@
 
       .main {
         position: relative;
-        width: clamp(300px, 60vw, 600px);
+        width: clamp(280px, 55vw, 580px);
         padding: clamp(35px, 6vw, 40%);
-        margin: clamp(35px, 6vw, 40%) auto;
         font-size: clamp(10px, 2vw, 22px);
         line-height: 150%;
         text-align: justify;
@@ -51,21 +50,22 @@
         font-weight: 500;
         font-family: 'Montserrat', Helvetica, sans-serif;
         color: #00386c;
-        background-color: rgba(255,255,255,0.1);
-        backdrop-filter: blur(50px);
-        border-radius: 2%
+        background-color: rgba(255,255,255,0.05);
+        backdrop-filter: blur(50%);
+        border-radius: 6%
       }
 
       .main-after,
       .main-before {
         position: absolute;
-        top: -0.3%;
-        bottom: -0.3%;
-        left: -0.3%;
-        right: -0.3%;
+        top: -6%;
+        bottom: -6%;
+        left: -6%;
+        right: -6%;
         border-radius: 2%;
+        margin: clamp(35px, 6vw, 40%) auto;
         background: linear-gradient(-235deg,
-       #31ffff, #fff, #fff, #ff3131);
+        #1F51FF, #fff, #fff, #fff, #ff3131);
         background-color: #fff;
         z-index: -1
       }
@@ -82,8 +82,8 @@
 
       .divider {
         text-align: center;
-        width: 75%;
-        border-top: 1px solid #33cccc;
+        width: 70%;
+        border-top: 2px solid #33cccc;
         margin: 8% auto;
         opacity: .2;
       }
@@ -101,7 +101,7 @@
       }
 
       .name {
-        padding-top: clamp(40px, 7vw, 45%)
+        padding-top: clamp(40px, 8vw, 45%)
       }
 
       .pos {
