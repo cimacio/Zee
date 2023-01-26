@@ -51,13 +51,14 @@
         --step-9: clamp(1.34rem, calc(0.45rem + 4.78vw), 2.24rem);
         --step-10: clamp(1.43rem, calc(0.48rem + 5.10vw), 2.39rem);
         background: #ebebeb;
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
       }
 
       body {
         margin: 0!important;
         padding: 0;
-        -webkit-text-size-adjust: 100%;
-        -moz-text-size-adjust: 100%
       }
 
       .wrapper {
@@ -69,10 +70,10 @@
 
       .main {
         min-width: 260px;
-        width: clamp(260px, calc(var(--step-1) + 70vw), 560px);
         font-size: var(--step-0);
-        padding: calc(var(--step-10) + var(--step--7));
-        margin: calc(var(--step-10) + var(--step--7)) auto;
+        width: clamp(260px, calc(1em + 70vw), 560px);
+        padding: 2.5em;
+        margin: 2.4em auto;
         line-height: 150%;
         text-align: justify;
         text-justify: inter-character;
@@ -94,14 +95,14 @@
       }
 
       .bigger-fonts {
-        font-size: var(--step-1);
+        font-size: var(--step-3);
         line-height: 1.1em;
         font-weight: 600
       }
 
       .smaller-fonts {
         font-size: var(--step--6);
-        opacity: 80%;
+        opacity: 90%;
         line-height: 1.3em;
         font-weight: 300
       }
@@ -115,11 +116,6 @@
       }
       
       a,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
       p {
         color: #00386c;
         text-decoration: none;
@@ -147,15 +143,13 @@
       }
       
       .company-details {
-        word-break: break;
         padding-left: .5em;
         text-align: left
       }
       
       .logo {
-        opacity: 0.7;
         border: 0;
-        height: 6em
+        height: 5.55em
       }
       
       .company-name {
