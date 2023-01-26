@@ -1,46 +1,204 @@
-  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title></title>
+    <style type="text/css">
     
-  <body style="padding: 0;margin: 0;">
-    <div class="wrapper" style="width: 100%;height: auto;position: absolute;box-sizing: border-box;background-color: #ebeef1;z-index: -9;">
-      <div class="main" style="position: relative;width: clamp(250px, 80%, 600px);padding: calc(10px + 5%);margin: calc(10px + 6%) auto;font-size: clamp(11px, calc(0.4rem + 1vw), 28px);text-align: justify;text-justify: inter-character;font-weight: normal;font-family: Arial, Verdana, sans-serif;color: #00386c;overflow: hidden;background-color: #ebeef1;box-shadow: .6vw .6vw .6vw -.06vw rgba(10,99,169,.16),
-        -.6vw -.6vw .6vw -.06vw rgba(255,255,255 ,.70);-webkit-box-shadow: .6vw .6vw .6vw -.06vw rgba(10,99,169,.16),
-        -.6vw -.6vw .6vw -.06vw rgba(255,255,255,.70);-moz-box-shadow: .6vw .6vw .6vw -.06vw rgba(10,99,169,.16),
-        -.6vw -.6vw .6vw -.06vw rgba(255,255,255 ,.70);border-radius: calc(10px + 2%);">
+      /*Neon red: #ff3131*/
+      /*Neon: Cyan: #31ffff*/
+      
+    /*@impo rt*/
+    /*url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');*/
+      
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      table {
+        border-spacing: 0
+      }
+
+      td {
+        padding: 0
+      }
+
+      img {
+        border: 0
+      }
+      
+      a,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      p {
+        color: #00386c;
+        text-decoration: none;
+        border: none;
+        margin: 0;
+        padding: 0
+      }
+
+      .wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        box-sizing: border-box;
+        background-color: #ebeef1;
+        z-index: -9
+      }
+
+      .main {
+        position: relative;
+        width: clamp(250px, 80%, 600px);
+        padding: calc(10px + 5%);
+        margin: calc(10px + 6%) auto;
+        font-size: clamp(11px, calc(0.4rem + 1vw), 28px);
+        text-align: justify;
+        text-justify: inter-character;
+        font-weight: normal;
+        font-family: Arial, Verdana, sans-serif;
+        color: #00386c;
+        overflow: hidden;
+        background-color: #ebeef1;
+        box-shadow: .6vw .6vw .6vw -.06vw rgba(10,99,169,.16),
+        -.6vw -.6vw .6vw -.06vw rgba(255,255,255 ,.70);
+        -webkit-box-shadow: .6vw .6vw .6vw -.06vw rgba(10,99,169,.16),
+        -.6vw -.6vw .6vw -.06vw rgba(255,255,255,.70);
+        -moz-box-shadow: .6vw .6vw .6vw -.06vw rgba(10,99,169,.16),
+        -.6vw -.6vw .6vw -.06vw rgba(255,255,255 ,.70);
+        border-radius: calc(10px + 2%)
+      }
+      
+      .design {
+        position: absolute;
+        height: 80%;
+        width: 100%;
+        background-color: #ebeef1;
+        box-shadow: inset .6vw .6vw .6vw -.06vw rgba(10,99,169,.16), inset
+        -.6vw -.6vw .6vw -.06vw rgba(255,255,255 ,.70);
+        -webkit-box-shadow: inset .6vw .6vw .6vw -.06vw rgba(10,99,169,.16), inset
+        -.6vw -.6vw .6vw -.06vw rgba(255,255,255,.70);
+        -moz-box-shadow: inset .6vw .6vw .6vw -.06vw rgba(10,99,169,.16), inset
+        -.6vw -.6vw .6vw -.06vw rgba(255,255,255 ,.70);
+        border-radius: 50%
+      }
+      
+      .right {
+        bottom: -45%;
+        right: -55%;
+      }
+      
+      .left {
+        top: -55%;
+        left: -65%;
+      }
+
+      .msg {
+        line-height: 1.5;
+        outline: 0;
+        opacity: 90%;
+        margin: 10% 0
+      } 
+
+      .bigger-fonts {
+        font-size: 120%;
+        line-height: 1;
+        opacity: 80%;
+        font-weight: bold
+      }
+
+      .smaller-fonts {
+        font-size: 95%;
+        opacity: 70%
+      }
+      
+      .xxs {
+        font-size: 75%;
+        opacity: 50%;
+        letter-spacing: .1em;
+        text-align: center
+      }
+      
+      .smaller-fonts, .xxs {
+        line-height: 1.5;
+        font-weight: normal
+      }
+
+      .name {
+        padding-top: calc(20px + 4%);
+      }
+
+      .pos {
+        color: #cd0000
+      }
+
+      .sig {
+        padding-bottom: calc(20px + 6%)
+      }
+      
+      .company-brand {
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+        text-align: center;
+      }
+     
+       .company-details, 
+       .logo-container {
+         display: inline-block;
+         text-align: left;
+         vertical-align: top;
+         font-size: clamp(11px, calc(0.4rem + 1vw), 28px);
+         height: 100%;
+         padding: calc(15px + 2vw) calc(3px + .1vw)
+      }
+      
+      .logo-container {
+        
+      }
+      
+      .logo {
+        opacity: .9;
+        height: calc(25px + 2.6vw);
+        z-index: 5;
+      }
+      
+    </style>
+  <body>
+    <div class="wrapper">
+      <div class="main">
         <div class="body">
           
-        <div class="design left" style="position: absolute;height: 80%;width: 100%;background-color: #ebeef1;box-shadow: inset .6vw .6vw .6vw -.06vw rgba(10,99,169,.16), inset
-        -.6vw -.6vw .6vw -.06vw rgba(255,255,255 ,.70);-webkit-box-shadow: inset .6vw .6vw .6vw -.06vw rgba(10,99,169,.16), inset
-        -.6vw -.6vw .6vw -.06vw rgba(255,255,255,.70);-moz-box-shadow: inset .6vw .6vw .6vw -.06vw rgba(10,99,169,.16), inset
-        -.6vw -.6vw .6vw -.06vw rgba(255,255,255 ,.70);border-radius: 50%;top: -55%;left: -65%;"></div>
-        <div class="design right" style="position: absolute;height: 80%;width: 100%;background-color: #ebeef1;box-shadow: inset .6vw .6vw .6vw -.06vw rgba(10,99,169,.16), inset
-        -.6vw -.6vw .6vw -.06vw rgba(255,255,255 ,.70);-webkit-box-shadow: inset .6vw .6vw .6vw -.06vw rgba(10,99,169,.16), inset
-        -.6vw -.6vw .6vw -.06vw rgba(255,255,255,.70);-moz-box-shadow: inset .6vw .6vw .6vw -.06vw rgba(10,99,169,.16), inset
-        -.6vw -.6vw .6vw -.06vw rgba(255,255,255 ,.70);border-radius: 50%;bottom: -45%;right: -55%;"></div>
+        <div class="design left"></div>
+        <div class="design right"></div>
         
-        <a href="https://www.hcc.com.ph/" style="width: max-content;background-color: yellow;color: #00386c;text-decoration: none;border: none;margin: 0;padding: 0;">
-         <div class="company-brand" style="width: 100%;height: 100%;font-size: 0;text-align: center;">
-            <div class="logo-container" style="display: inline-block;text-align: left;vertical-align: top;font-size: clamp(11px, calc(0.4rem + 1vw), 28px);height: 100%;padding: calc(15px + 2vw) calc(3px + .1vw);">
-               <img src="https://i.imgur.com/rbxT2lE.png" alt="HCC Logo" title="HCC Logo" class="logo" style="border: 0;opacity: .9;height: calc(25px + 2.6vw);z-index: 5;">
+        <a href="https://www.hcc.com.ph/" style="width:max-content;background-color:yellow">
+         <div class="company-brand">
+            <div class="logo-container">
+               <img
+               src="https://i.imgur.com/rbxT2lE.png"
+               alt="HCC Logo" title="HCC Logo"
+               class="logo" />
             </div>   <!--logo-container-->
-            <div class="company-details" style="display: inline-block;text-align: left;vertical-align: top;font-size: clamp(11px, calc(0.4rem + 1vw), 28px);height: 100%;padding: calc(15px + 2vw) calc(3px + .1vw);">
-              <p class="bigger-fonts" style="color: #00386c;text-decoration: none;border: none;margin: 0;padding: 0;font-size: 120%;line-height: 1;opacity: 80%;font-weight: bold;">HILMARC'S
+            <div class="company-details">
+              <p class="bigger-fonts">HILMARC'S
               CONSTRUCTION CORPORATION</p>
-              <p class="smaller-fonts" style="color: #00386c;text-decoration: none;border: none;margin: 0;padding: 0;font-size: 95%;opacity: 70%;line-height: 1.5;font-weight: normal;">1835, E.
+              <p class="smaller-fonts">1835, E.
               Rodriguez Sr. Avenue, Quezon City,
               Metro Manila</p>
-              <p class="xxs" style="color: #00386c;text-decoration: none;border: none;margin: 0;padding: 0;font-size: 75%;opacity: 50%;letter-spacing: .1em;text-align: center;line-height: 1.5;font-weight: normal;">•  Tel: +63 (2) 8
+              <p class="xxs">•  Tel: +63 (2) 8
               726 9471 | +63 (2) 8 654 4152  •</p>
             </div>   <!--company-details-->
           </div></a>   <!--company-brand-->
           
         <div class="msg-body">
-          <p class="msg" contenteditable="true" style="color: #00386c;text-decoration: none;border: none;margin: 10% 0;padding: 0;line-height: 1.5;outline: 0;opacity: 90%;">Dear [Subcontractor's Contact Person],
+          <p class="msg" contenteditable="true">Dear [Subcontractor's Contact Person],
           <br><br>
             Thank you for your email. This serves as confirmation that I have received and reviewed the medical reports that you have submitted. I can confirm that all submitted documents are complete and legitimate. There are no medical findings that would prevent any of the applicants from being hired or deployed to the site. I will now forward the documents to our HR department for further review and verification.
               <br><br>
@@ -50,15 +208,15 @@
           </p>
         </div>   <!--msg-body-->
         
-          <div class="sig" style="padding-bottom: calc(20px + 6%);">
-            <p style="color: #00386c;text-decoration: none;border: none;margin: 0;padding: 0;">Best Regards,</p>
-            <p class="bigger-fonts name" style="color: #00386c;text-decoration: none;border: none;margin: 0;padding: 0;font-size: 120%;line-height: 1;opacity: 80%;font-weight: bold;padding-top: calc(20px + 4%);">JAY AR ADLAON CIMACIO, RN</p>
-            <p class="bigger-fonts pos" style="color: #cd0000;text-decoration: none;border: none;margin: 0;padding: 0;font-size: 120%;line-height: 1;opacity: 80%;font-weight: bold;">OCCUPATIONAL HEALTH NURSE</p>
-            <p class="smaller-fonts" style="color: #00386c;text-decoration: none;border: none;margin: 0;padding: 0;font-size: 95%;opacity: 70%;line-height: 1.5;font-weight: normal;">License number: 0847170</p>
+          <div class="sig">
+            <p>Best Regards,</p>
+            <p class="bigger-fonts name">JAY AR ADLAON CIMACIO, RN</p>
+            <p class="bigger-fonts pos">OCCUPATIONAL HEALTH NURSE</p>
+            <p class="smaller-fonts">License number: 0847170</p>
           </div>   <!--sig-->
           
         </div>   <!--body-->
       </div>   <!--main-->
     </div>   <!--wrapper--> 
   </body>
-</head></html>
+</html> 
