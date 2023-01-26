@@ -29,6 +29,9 @@
     <style type="text/css">
 
       :root {
+        --step--7: clamp(0.48rem, calc(-0.16rem + 2.54vw), 0.79rem);
+        --step--6: clamp(0.51rem, calc(-0.17rem + 2.71vw), 0.85rem);
+        --step--5: clamp(0.54rem, calc(-0.18rem + 2.89vw), 0.90rem);
         --step--4: clamp(0.58rem, calc(-0.19rem + 3.09vw), 0.96rem);
         --step--3: clamp(0.62rem, calc(-0.20rem + 3.29vw), 1.03rem);
         --step--2: clamp(0.66rem, calc(-0.22rem + 3.52vw), 1.10rem);
@@ -38,6 +41,12 @@
         --step-2: clamp(0.85rem, calc(-0.28rem + 4.56vw), 1.42rem);
         --step-3: clamp(0.91rem, calc(-0.30rem + 4.86vw), 1.52rem);
         --step-4: clamp(0.97rem, calc(-0.32rem + 5.19vw), 1.62rem);
+        --step-5: clamp(1.04rem, calc(-0.34rem + 5.53vw), 1.73rem);
+        --step-6: clamp(1.11rem, calc(-0.37rem + 5.90vw), 1.84rem);
+        --step-7: clamp(1.18rem, calc(-0.39rem + 6.30vw), 1.97rem);
+        --step-8: clamp(1.26rem, calc(-0.42rem + 6.72vw), 2.10rem);
+        --step-9: clamp(1.34rem, calc(-0.45rem + 7.17vw), 2.24rem);
+        --step-10: clamp(1.43rem, calc(-0.48rem + 7.65vw), 2.39rem);
         background: #00386c;
       }
 
@@ -56,10 +65,10 @@
       }
 
       .main {
-        min-width: 220px;
-        width: clamp(220px, 60vw, 600px);
-        padding: clamp(20px, 16vw, 6%);
-        margin: clamp(25px, 18vw, 8%) auto;
+        min-width: 260px;
+        width: clamp(260px, calc(var(--step-1) + 70vw), 600px);
+        padding: calc(var(--step-10) + var(--step--7));
+        margin: calc(var(--step-10) + var(--step--7)) auto;
         font-size: var(--step-0);
         line-height: 150%;
         text-align: justify;
@@ -78,7 +87,7 @@
 
       .msg {
         font-size: var(--step--3);
-        line-height: 150%;
+        line-height: 1.5em;
         outline: 0;
         margin: 10% 0
       }
@@ -93,19 +102,19 @@
 
       .bigger-fonts {
         font-size: var(--step--3);
-        line-height: 100%;
+        line-height: 1.1em;
         font-weight: 600
       }
 
       .smaller-fonts {
-        font-size: var(--step--4);
+        font-size: var(--step--6);
         opacity: 80%;
-        line-height: 120%;
+        line-height: 1.2em;
         font-weight: 300
       }
 
       .name {
-        padding-top: clamp(35px, 6vw, 40%)
+        padding-top: calc(var(--step-10) + var(--step--5));
       }
 
       .pos {
@@ -132,7 +141,9 @@
       
       .company-brand {
         width: 100%;
-        text-align: center
+        height: 100%;
+        text-align: center;
+        vertical-align: center;
       }
     
        .company-details, 
@@ -147,12 +158,13 @@
       }
       
       .logo {
+        opacity: 0.7;
         border: 0;
-        height: clamp(28px, 5.5vw, 80px)
+        height: calc(var(--step-10) + var(--step--7));
       }
       
       .company-name {
-        top: 0;
+        opacity: .4;
       }
       
     </style>
@@ -171,7 +183,7 @@
          <div class="company-brand">
             <div class="logo-container">
                <img
-               src="https://i.imgur.com/rbxT2lE.png"
+               src="img/logo-light.png"
                alt="HCC Logo" title="HCC Logo"
                class="logo" />
             </div>   <!--logo-container-->
