@@ -84,22 +84,22 @@
       }
 
       .msg {
-        font-size: var(--step--4);
+        font-size: var(--step--2);
         line-height: 1.5em;
         outline: 0;
         margin: 10% 0
       }
 
       .bigger-fonts {
-        font-size: var(--step--4);
+        font-size: var(--step-1);
         line-height: 1.1em;
         font-weight: 600
       }
 
       .smaller-fonts {
-        font-size: var(--step--9);
+        font-size: var(--step--6);
         opacity: 80%;
-        line-height: 1.5em;
+        line-height: 1.3em;
         font-weight: 300
       }
 
@@ -131,18 +131,20 @@
       
       .company-brand {
         width: 100%;
-        height: min-content;
         text-align: center;
         vertical-align: top;
+        font-size: 0;
       }
     
        .company-details, 
        .logo-container {
+         font-size: var(--step-0);
          display: inline-block;
-         height: min-content
+         width: min-content
       }
       
       .company-details {
+        word-break: break;
         padding-left: .5em;
         text-align: left
       }
@@ -150,7 +152,7 @@
       .logo {
         opacity: 0.7;
         border: 0;
-        height: calc(var(--step-10) + var(--step--10))
+        height: 6em
       }
       
       .company-name {
@@ -182,9 +184,7 @@
               CONSTRUCTION CORPORATION</p>
               <p class="smaller-fonts">1835, E.
               Rodriguez Sr. Avenue, Quezon City,
-              Metro Manila<br>+63 (2) 8
-              726 9471  |  +63 (2) 8 654 4152  |  +63
-              (2) 8 654 41 59</p>
+              Metro Manila</p>
             </div>   <!--company-details-->
           </div></a>   <!--company-brand-->
           
