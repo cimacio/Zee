@@ -39,15 +39,14 @@
 
       body {
         background: #ebebeb;
-        -webkit-text-size-adjust: 100%;
-        -moz-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-        margin: 0!important;
+        margin: 0;
         padding: 0;
+        font-size: 16px;
       }
 
       .wrapper {
-        font-size: 16px !important;
+        font-size: clamp(0.75rem, calc(0.25rem + 2.67vw), 1.25rem);
+        width: 100%;
         background: inherit;
         -webkit-text-size-adjust: 100%;
         -moz-text-size-adjust: 100%;
@@ -62,15 +61,10 @@
 
       .main {
         background: #ebebeb;
-        font-size: clamp(0.75em, calc(0.25em + 2.67vw), 1.25em);
-        width: 100%;
         width: clamp(260px, calc(1em + 70vw), 560px);
         padding: 2.5em;
         margin: 2.4em auto;
         border-radius: .8em;
-        -webkit-text-size-adjust: 100%;
-        -moz-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
         font-family: 'Poppins', Helvetica, sans-serif;
         text-align: justify;
         text-justify: inter-character;
@@ -90,7 +84,7 @@
         font-family: 'Poppins', Helvetica, sans-serif;
         text-align: justify;
         text-justify: inter-character;
-        font-size: clamp(0.75em, calc(0.25em + 2.67vw), 1.25em);
+        font-size: clamp(0.75rem, calc(0.25rem + 2.67vw), 1.25rem);
         font-weight: 400;
         outline: 0;
         color: #00386c;
@@ -109,7 +103,7 @@
       }
 
       .company-name {
-        font-size: clamp(1.04em, calc(0.35em + 3.69vw), 1.73em);
+        font-size: clamp(1.04rem, calc(0.35rem + 3.69vw), 1.73rem);
         font-weight: 900;
         line-height: .9em;
       }
@@ -121,10 +115,9 @@
       }
 
       .smaller-fonts {
-        font-size: clamp(0.54em, calc(0.18em + 1.93vw), 0.90em);
+        font-size: clamp(0.54rem, calc(0.18rem + 1.93vw), 0.90rem);
         opacity: .6;
-        line-height: 1.35em;
-        color: #cd0000;
+        line-height: 1.2em;
         font-weight: 300
       }
 
@@ -150,7 +143,7 @@
        .company-details, 
        .logo-container {
          text-align: left;
-         font-size: clamp(0.75em, calc(0.25em + 2.67vw), 1.25em);
+         font-size: clamp(0.75rem, calc(0.25rem + 2.67vw), 1.25rem);
          display: inline-block;
          width: min-content
       }
