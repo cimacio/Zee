@@ -22,7 +22,7 @@
     <!--[if !mso]>
 					<!-->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap"
       rel="stylesheet">
 
     <!--
@@ -76,24 +76,29 @@
         width: clamp(260px, calc(1em + 70vw), 560px);
         padding: 2.5em;
         margin: 2.4em auto;
-        text-align: justify;
-        text-justify: inter-character;
-        font-weight: 400;
-        font-family: 'Poppins', Helvetica, sans-serif;
-        border-radius: 1em;
+        border-radius: .6em;
         background: inherit;
-        box-shadow: rgba(0, 0, 0, 0.1) 0 .3333em .5em -.083333em,
-		      rgba(0, 0, 0, .06) 0 .166667em .3333em -.083333em;
-        -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 .3333em .5em -.083333em,
-          rgba(0, 0, 0, .06) 0 .166667em .3333em -.083333em;
-        -moz-box-box-shadow: rgba(0, 0, 0, 0.1) 0 .3333em .5em -.083333em,
-          rgba(0, 0, 0, .06) 0 .166667em .3333em -.083333em;
+        box-shadow: -1.333em -1.333em 2em rgba(255, 255, 255, .4),
+        1.333em 1.333em 2em rgba(0, 0, 0, .08)
       } 
 
-      .msg {
+      a,
+      p,
+      span {
+        font-family: 'Poppins', Helvetica, sans-serif;
+        text-align: justify;
+        text-justify: inter-character;
         font-size: var(--step--0);
+        font-weight: 400;
+        outline: 0;
+        color: #00386c;
+        text-decoration: none;
         line-height: 1.5em;
-        outline: 0
+        opacity: .7;
+        margin: 0;
+        padding: 0;
+        caret-color: aqua;
+        pointer-events: none
       }
       
       .msg-body {
@@ -101,12 +106,11 @@
       }
 
       .company-name {
+        width: 100%;
+        font-family: 'Poppins', Helvetica, sans-serif;
         font-size: var(--step-5);
         font-weight: 900;
-        line-height: .8em;
-        color: #ebebeb !important;
-        text-shadow: inset  rgba(0, 0, 0, 0.1) 0 .3333em .5em -.083333em, inset
-          rgba(0, 0, 0, .06) 0 .166667em .3333em -.083333em !important;
+        line-height: .9em;
       }
 
       .bigger-fonts {
@@ -116,9 +120,9 @@
       }
 
       .smaller-fonts {
-        font-size: var(--step--6);
-        opacity: 90%;
-        line-height: 1.3em;
+        font-size: var(--step--5);
+        opacity: .6;
+        line-height: 1.4em;
         font-weight: 300
       }
 
@@ -130,14 +134,6 @@
         color: #cd0000
       }
       
-      a,
-      p {
-        color: #00386c;
-        text-decoration: none;
-        margin: 0;
-        padding: 0
-      }
-
       .sig {
         padding-bottom: 2.5em;
         width: fit-content
@@ -164,8 +160,9 @@
             
       .logo {
         font-size: var(--step-0);
-        border: 0;
+        opacity: .8;
         height: 5.199999em;
+        border-radius: .2em;
       }      
       
     </style>
@@ -180,22 +177,23 @@
             <div class="main-before"></div>
             <div class="main-after"></div>
 
-            <a href="https://www.hcc.com.ph/">
-              <div class="company-brand">
-                <div class="logo-container">
-                  <img
-                    src="img/logo-dark.png"
-                    alt="HCC Logo" title="HCC Logo"
-                    class="logo" />
-                </div> <!--logo-container-->
-                <div class="company-details">
-                  <p class="company-name">HILMARC'S
-                    CONSTRUCTION CORPORATION</p>
-                  <p class="smaller-fonts">1835, E.
-                    Rodriguez Sr. Avenue, Quezon City,
-                    Metro Manila</p>
-                </div> <!--company-details-->
-              </div></a> <!--company-brand-->
+            
+            <div class="company-brand" valign="top">
+              <div class="logo-container">
+                <a href="https://www.hcc.com.ph/"></a><img
+                  src="img/logo-dark.png"
+                  alt="HCC Logo" title="HCC Logo"
+                  class="logo" /></a>
+              </div> <!--logo-container-->
+              <div class="company-details">
+                <p class="company-name">HILMARC'S</p>
+                <p class="company-name">CONSTRUCTION</p>
+                <p class="company-name">CORPORATION</p>
+                <p class="smaller-fonts">1835, E.
+                  Rodriguez Sr. Avenue, Quezon City,
+                  Metro Manila</p>
+              </div> <!--company-details-->
+            </div> <!--company-brand-->
 
             <div class="msg-body">
               <p class="msg" contenteditable="true">Dear [Subcontractor's
