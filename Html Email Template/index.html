@@ -41,11 +41,10 @@
         background: #ebebeb;
         margin: 0;
         padding: 0;
-        font-size: 16px;
       }
 
       .wrapper {
-        font-size: clamp(0.75rem, calc(0.25rem + 2.67vw), 1.25rem);
+        font-size: clamp(12px, calc(10 + .2vw), 20px);
         width: 100%;
         background: inherit;
         -webkit-text-size-adjust: 100%;
@@ -61,21 +60,15 @@
 
       .main {
         background: #ebebeb;
-        width: clamp(260px, calc(1em + 70vw), 560px);
+        width: clamp(260px, calc(1rem + 70vw), 560px);
         padding: 2.5em;
         margin: 2.4em auto;
         border-radius: .8em;
         font-family: 'Poppins', Helvetica, sans-serif;
         text-align: justify;
-        text-justify: inter-character;
-        box-shadow: -1.333em -1.333em 2em rgba(255, 255, 255, .4),
-        1.333em 1.333em 2em rgba(0, 0, 0, .08);
-        -webkit-box-shadow: -1.333em -1.333em 2em rgba(255, 255, 255, .4),
-        1.333em 1.333em 2em rgba(0, 0, 0, .08);
-        -moz-box-shadow: -1.333em -1.333em 2em rgba(255, 255, 255, .4),
-        1.333em 1.333em 2em rgba(0, 0, 0, .08);
-        -ms-box-shadow: -1.333em -1.333em 2em rgba(255, 255, 255, .4),
-        1.333em 1.333em 2em rgba(0, 0, 0, .08);
+        text-justify: distribute;
+        box-shadow: -12px -12px 24px rgba(255, 255, 255, .4),
+        12px 12px 24px rgba(0, 0, 0, .08);
       } 
 
       a,
@@ -83,7 +76,7 @@
       span {
         font-family: 'Poppins', Helvetica, sans-serif;
         text-align: justify;
-        text-justify: inter-character;
+        text-justify: distribute;
         font-size: clamp(0.75rem, calc(0.25rem + 2.67vw), 1.25rem);
         font-weight: 400;
         outline: 0;
@@ -98,10 +91,10 @@
       .msg-body {
         font-family: 'Poppins', Helvetica, sans-serif;
         text-align: justify;
-        text-justify: inter-character;
+        text-justify: distribute;
         margin: 2.4em 0
       }
-
+ 
       .company-name {
         font-size: clamp(1.04rem, calc(0.35rem + 3.69vw), 1.73rem);
         font-weight: 900;
