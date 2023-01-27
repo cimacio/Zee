@@ -31,27 +31,6 @@
     <style type="text/css">
 
       :root {
-        --step--10: clamp(0.39rem, calc(0.13rem + 1.40vw), 0.65rem);
-        --step--9: clamp(0.42rem, calc(0.14rem + 1.49vw), 0.70rem);
-        --step--8: clamp(0.45rem, calc(0.15rem + 1.59vw), 0.74rem);
-        --step--7: clamp(0.48rem, calc(0.16rem + 1.69vw), 0.79rem);
-        --step--6: clamp(0.51rem, calc(0.17rem + 1.81vw), 0.85rem);
-        --step--5: clamp(0.54rem, calc(0.18rem + 1.93vw), 0.90rem);
-        --step--4: clamp(0.58rem, calc(0.19rem + 2.06vw), 0.96rem);
-        --step--3: clamp(0.62rem, calc(0.21rem + 2.19vw), 1.03rem);
-        --step--2: clamp(0.66rem, calc(0.22rem + 2.34vw), 1.10rem);
-        --step--1: clamp(0.70rem, calc(0.24rem + 2.50vw), 1.17rem);
-        --step-0: clamp(0.75rem, calc(0.25rem + 2.67vw), 1.25rem);
-        --step-1: clamp(0.80rem, calc(0.27rem + 2.85vw), 1.33rem);
-        --step-2: clamp(0.85rem, calc(0.28rem + 3.04vw), 1.42rem);
-        --step-3: clamp(0.91rem, calc(0.30rem + 3.24vw), 1.52rem);
-        --step-4: clamp(0.97rem, calc(0.32rem + 3.46vw), 1.62rem);
-        --step-5: clamp(1.04rem, calc(0.35rem + 3.69vw), 1.73rem);
-        --step-6: clamp(1.11rem, calc(0.37rem + 3.93vw), 1.84rem);
-        --step-7: clamp(1.18rem, calc(0.39rem + 4.20vw), 1.97rem);
-        --step-8: clamp(1.26rem, calc(0.42rem + 4.48vw), 2.10rem);
-        --step-9: clamp(1.34rem, calc(0.45rem + 4.78vw), 2.24rem);
-        --step-10: clamp(1.43rem, calc(0.48rem + 5.10vw), 2.39rem);
         background: #ebebeb;
         -webkit-text-size-adjust: 100%;
         -moz-text-size-adjust: 100%;
@@ -59,20 +38,33 @@
       }
 
       body {
+        background: #ebebeb;
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
         margin: 0!important;
         padding: 0;
       }
 
       .wrapper {
+        background: #ebebeb;
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
         position: absolute;
+        width: 100%;
         width: 100%;
         box-sizing: border-box;
         background-color: transparent
       }
 
       .main {
+        background: #ebebeb;
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
         min-width: 260px;
-        font-size: var(--step-0);
+        font-size: clamp(0.75rem, calc(0.25rem + 2.67vw), 1.25rem);
         width: clamp(260px, calc(1em + 70vw), 560px);
         padding: 2.5em;
         margin: 2.4em auto;
@@ -89,7 +81,7 @@
         font-family: 'Poppins', Helvetica, sans-serif;
         text-align: justify;
         text-justify: inter-character;
-        font-size: var(--step--0);
+        font-size: clamp(0.75rem, calc(0.25rem + 2.67vw), 1.25rem);
         font-weight: 400;
         outline: 0;
         color: #00386c;
@@ -109,19 +101,19 @@
       .company-name {
         width: 100%;
         font-family: 'Poppins', Helvetica, sans-serif;
-        font-size: var(--step-5);
+        font-size: vclamp(1.04rem, calc(0.35rem + 3.69vw), 1.73rem);
         font-weight: 900;
         line-height: .9em;
       }
 
       .bigger-fonts {
-        font-size: var(--step-2);
+        font-size: clamp(0.66rem, calc(0.22rem + 2.34vw), 1.10rem);
         line-height: 1em;
         font-weight: 600
       }
 
       .smaller-fonts {
-        font-size: var(--step--5);
+        font-size: clamp(0.54rem, calc(0.18rem + 1.93vw), 0.90rem);
         opacity: .6;
         line-height: 1.4em;
         font-weight: 300
@@ -149,7 +141,7 @@
     
        .company-details, 
        .logo-container {
-         font-size: var(--step-0);
+         font-size: clamp(0.75rem, calc(0.25rem + 2.67vw), 1.25rem);
          display: inline-block;
          width: min-content
       }
@@ -160,7 +152,6 @@
       }
             
       .logo {
-        font-size: var(--step-0);
         border: 0;
         opacity: .8;
         height: 5.199999em;
