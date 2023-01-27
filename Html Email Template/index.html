@@ -47,11 +47,14 @@
       }
 
       .wrapper {
+        font-size: 16px !important;
         background: #ebebeb;
         -webkit-text-size-adjust: 100%;
         -moz-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
         position: absolute;
+        margin: 0;
+        padding: 0;
         width: 100%;
         height: 100%;
         box-sizing: border-box;
@@ -59,7 +62,7 @@
 
       .main {
         background: #ebebeb;
-        font-size: clamp(0.75rem, calc(0.25rem + 2.67vw), 1.25rem);
+        font-size: clamp(0.75em, calc(0.25em + 2.67vw), 1.25em);
         width: 100%;
         width: clamp(260px, calc(1em + 70vw), 560px);
         padding: 2.5em;
@@ -68,7 +71,16 @@
         -webkit-text-size-adjust: 100%;
         -moz-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
+        font-family: 'Poppins', Helvetica, sans-serif;
+        text-align: justify;
+        text-justify: inter-character;
         box-shadow: -1.333em -1.333em 2em rgba(255, 255, 255, .4),
+        1.333em 1.333em 2em rgba(0, 0, 0, .08)
+        -webkit-box-shadow: -1.333em -1.333em 2em rgba(255, 255, 255, .4),
+        1.333em 1.333em 2em rgba(0, 0, 0, .08)
+        -moz-box-shadow: -1.333em -1.333em 2em rgba(255, 255, 255, .4),
+        1.333em 1.333em 2em rgba(0, 0, 0, .08)
+        -ms-box-shadow: -1.333em -1.333em 2em rgba(255, 255, 255, .4),
         1.333em 1.333em 2em rgba(0, 0, 0, .08)
       } 
 
@@ -78,7 +90,7 @@
         font-family: 'Poppins', Helvetica, sans-serif;
         text-align: justify;
         text-justify: inter-character;
-        font-size: clamp(0.75rem, calc(0.25rem + 2.67vw), 1.25rem);
+        font-size: clamp(0.75em, calc(0.25em + 2.67vw), 1.25em);
         font-weight: 400;
         outline: 0;
         color: #00386c;
@@ -92,24 +104,33 @@
       }
       
       .msg-body {
+        font-family: 'Poppins', Helvetica, sans-serif;
+        text-align: justify;
+        text-justify: inter-character;
         margin: 2.4em 0
       }
 
       .company-name {
         width: 100%;
-        font-size: clamp(1.04rem, calc(0.35rem + 3.69vw), 1.73rem);
+        font-size: clamp(1.04em, calc(0.35em + 3.69vw), 1.73em);
         font-weight: 900;
         line-height: .9em;
       }
 
       .bigger-fonts {
-        font-size: clamp(0.66rem, calc(0.22rem + 2.34vw), 1.10rem);
+        font-family: 'Poppins', Helvetica, sans-serif;
+        text-align: justify;
+        text-justify: inter-character;
+        font-size: clamp(0.66em, calc(0.22em + 2.34vw), 1.10em);
         line-height: 1em;
         font-weight: 600
       }
 
       .smaller-fonts {
-        font-size: clamp(0.54rem, calc(0.18rem + 1.93vw), 0.90rem);
+        font-family: 'Poppins', Helvetica, sans-serif;
+        text-align: justify;
+        text-justify: inter-character;
+        font-size: clamp(0.54em, calc(0.18em + 1.93vw), 0.90em);
         opacity: .6;
         line-height: 1.35em;
         font-weight: 300
@@ -137,7 +158,10 @@
     
        .company-details, 
        .logo-container {
-         font-size: clamp(0.75rem, calc(0.25rem + 2.67vw), 1.25rem);
+         font-family: 'Poppins', Helvetica, sans-serif;
+        text-align: justify;
+        text-justify: inter-character;
+         font-size: clamp(0.75em, calc(0.25em + 2.67vw), 1.25em);
          display: inline-block;
          width: min-content
       }
@@ -162,10 +186,6 @@
       <div class="wrapper">
         <div class="main" width="100%">
           <div class="body">
-
-            <div class="main-before"></div>
-            <div class="main-after"></div>
-
             
             <div class="company-brand" valign="top">
               <div class="logo-container">
@@ -212,6 +232,6 @@
 
           </div> <!--body-->
         </div> <!--main-->
-      </div> <!--wrapper-->
+      </div> <!--wrapper--> 
     </body>
   </html>
