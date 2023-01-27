@@ -48,7 +48,7 @@
 
       .wrapper {
         font-size: 16px !important;
-        background: #ebebeb;
+        background: inherit;
         -webkit-text-size-adjust: 100%;
         -moz-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
@@ -99,8 +99,6 @@
         opacity: .7;
         margin: 0;
         padding: 0;
-        caret-color: aqua;
-        pointer-events: none
       }
       
       .msg-body {
@@ -111,25 +109,18 @@
       }
 
       .company-name {
-        width: 100%;
         font-size: clamp(1.04em, calc(0.35em + 3.69vw), 1.73em);
         font-weight: 900;
         line-height: .9em;
       }
 
       .bigger-fonts {
-        font-family: 'Poppins', Helvetica, sans-serif;
-        text-align: justify;
-        text-justify: inter-character;
-        font-size: clamp(0.66em, calc(0.22em + 2.34vw), 1.10em);
+        font-size: clamp(0.85rem, calc(0.28rem + 3.04vw), 1.42rem);
         line-height: 1em;
         font-weight: 600
       }
 
       .smaller-fonts {
-        font-family: 'Poppins', Helvetica, sans-serif;
-        text-align: justify;
-        text-justify: inter-character;
         font-size: clamp(0.54em, calc(0.18em + 1.93vw), 0.90em);
         opacity: .6;
         line-height: 1.35em;
@@ -158,9 +149,7 @@
     
        .company-details, 
        .logo-container {
-         font-family: 'Poppins', Helvetica, sans-serif;
-        text-align: justify;
-        text-justify: inter-character;
+         text-align: left;
          font-size: clamp(0.75em, calc(0.25em + 2.67vw), 1.25em);
          display: inline-block;
          width: min-content
@@ -173,7 +162,7 @@
             
       .logo {
         border: 0;
-        opacity: .9;
+        opacity: .95;
         height: 5.5em;
         border-radius: .2em;
       }      
