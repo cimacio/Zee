@@ -21,10 +21,8 @@
     <title></title>
     <!--[if !mso]>
 					<!-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
       rel="stylesheet">
 
     <!--
@@ -84,7 +82,12 @@
         font-family: 'Poppins', Helvetica, sans-serif;
         border-radius: 1em;
         background: inherit;
-        box-shadow: rgba(204, 219, 232, .7) .25em .25em .5em 0 inset, rgba(255, 255, 255, .5) -.25em -.25em .5em .083333em inset;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 .3333em .5em -.083333em,
+		      rgba(0, 0, 0, .06) 0 .166667em .3333em -.083333em;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 .3333em .5em -.083333em,
+          rgba(0, 0, 0, .06) 0 .166667em .3333em -.083333em;
+        -moz-box-box-shadow: rgba(0, 0, 0, 0.1) 0 .3333em .5em -.083333em,
+          rgba(0, 0, 0, .06) 0 .166667em .3333em -.083333em;
       } 
 
       .msg {
@@ -97,8 +100,14 @@
         margin: 2.4em 0
       }
 
+      .company-name {
+        font-weight: 900;
+        line-height: .8em;
+        font-size: var(--step-5)
+      }
+
       .bigger-fonts {
-        font-size: var(--step-3);
+        font-size: var(--step-2);
         line-height: 1em;
         font-weight: 600
       }
@@ -149,16 +158,12 @@
         padding-left: .5em;
         text-align: left
       }
-      
-      .logo-container {
-        box-shadow: rgba(204, 219, 232, .7) .25em .25em .5em 0 inset, rgba(255, 255, 255, .5) -.25em -.25em .5em .083333em inset;
-      }
-      
+            
       .logo {
+        font-size: var(--step-0);
         border: 0;
-        height: 5.199999em
-      }
-      
+        height: 5.199999em;
+      }      
       
     </style>
     <body style="
@@ -181,7 +186,7 @@
                     class="logo" />
                 </div> <!--logo-container-->
                 <div class="company-details">
-                  <p class="bigger-fonts company-name">HILMARC'S
+                  <p class="company-name">HILMARC'S
                     CONSTRUCTION CORPORATION</p>
                   <p class="smaller-fonts">1835, E.
                     Rodriguez Sr. Avenue, Quezon City,
