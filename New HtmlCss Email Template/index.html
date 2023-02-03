@@ -94,8 +94,7 @@
       
       <table
         class="main"
-        style="position:relative;
-          width: 100% !important;
+        style="isolation: isolate; position:relative; width: 100% !important;
           max-width: 600px !important;
           min-width: 320px !important;
           margin: 0 auto !important;
@@ -114,7 +113,7 @@
               min-width: 320px !important;
             ">
             
-          <div class="border-holder" style="position:absolute; inset:0; background: yellow;">
+          <div class="border-holder" style="position: absolute; inset: 0; z-index: -1; background: yellow;">
             
             <img src="borders/top.png" alt="borders" class="top" style="position:relative; top: 0; -ms-interpolation-mode: bicubic !important;"/>
             
