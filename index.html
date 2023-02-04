@@ -61,7 +61,7 @@
         background: #e7eef7;
       ">
 
-    <table style="
+    <table class="spacer-top" style="
           width: 100%;
           max-width: 600px;
           min-width: 320px;
@@ -74,25 +74,36 @@
         </td>
       </tr>
     </table>
-    
+
     <table class="main" style="
+          position: relative;
           width: 100%;
           max-width: 600px;
           min-width: 320px;
           margin: 0 auto;
-          border-radius: 30px;
-          border: 0;
           background: inherit;
-          border-collapse: collapse;
           border-width: 0;
           border-spacing: 0;
-          border-style: none;" width="100%">
+          border-style: none;
+          border-collapse: collapse;
+          " width="100%">
+
       <tr>
 
-        <td style="width: 100%;
+        <td style="
+              width: 100%;
               max-width: 600px;
               min-width: 320px;
             ">
+
+          <div class="border" style="
+            position: absolute;
+            inset: 0;
+            border: 20px solid;
+            border-image-source: url('borders/border.webp');
+            border-image-slice: 40 fill; -ms-interpolation-mode: bicubic;
+                    ">
+          </div>
 
           <table class="company-brand" style="
                 width: 100%;
