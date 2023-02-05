@@ -94,6 +94,18 @@ a {
 
       @media screen and (max-width:480px) {
         
+        .company-content {
+          padding: 40px 0 40px !important;
+        }
+        
+        .content {
+          padding: 0 40px !important;
+        }
+        
+        .signature {
+          padding: 40px !important;
+        }
+        
         .logo {
           width: 40px !important;
         }
@@ -127,11 +139,14 @@ a {
       /* Dark mode adjustments */
     @media (prefers-color-scheme: dark) {
       
-      body, .wrapper {
+      body, .wrapper, .main {
         background-color: #00386c !important;
       }
       
-      body, p, a, div, td, table {
+      .company-details,
+      .content,
+      .zee-name,
+      .zee-license {
         color: #f1f1f1 !important;
       }
       
@@ -235,6 +250,15 @@ a {
             repeat-x,
             repeat-y,
             repeat-y;
+          background-size:
+            8%,
+            8%,
+            8%,
+            8%,
+            8%,
+            8%,
+            3%,
+            3%;
           background-color: #e7eef7;
           " width="100%" border="0" cellSpacing="0" cellPadding="0">
       <tr>
@@ -268,7 +292,7 @@ a {
                 direction: ltr;
                 " width="100%" border="0" cellSpacing="0" cellPadding="0">
             <tr>
-              <td style="
+              <td class="company-content" style="
                 width: 100%;
                 max-width: 600px;
                 min-width: 320px;
@@ -326,6 +350,7 @@ a {
                           margin: 0;
                           font-size: 22px;
                           font-weight: 900;
+                          line-height: 1.2;
                         "> Hilmarc&#x27s Construction Corporation
                     </p>
                     <br />
@@ -335,6 +360,7 @@ a {
                           margin: 0;
                           font-size: 12.6px;
                           font-weight: 200;
+                          line-height: 1.2;
                         ">
                       1835, E. Rodriguez Sr. Avenue, Quezon City,
                       Metro Manila, Philippines
@@ -345,6 +371,7 @@ a {
                           margin: 0;
                           font-size: 12.8px;
                           font-weight: 200;
+                          line-height: 1.2;
                         ">
                       +63 (2) 8 726 9471<span style="font-weight: 500">  |  </span>+63 (2) 8 654 4152<span style="font-weight: 500">  |  </span>+63 (2) 8 654 4159
                     </p>
@@ -375,7 +402,7 @@ a {
                 direction: ltr;
               " border="0" cellSpacing="0" cellPadding="0" width="100%">
             <tr>
-              <td class="msg-body" style="
+              <td class="msg-body content" style="
                     width: 100%;
                     max-width: 600px;
                     min-width: 320px;
@@ -393,6 +420,7 @@ a {
                     mso-line-height-rule:exactly;
                   ">
                 <p class="msg-body" style="
+                      line-height: 1.5;
                       padding: 0;
                       margin: 0;
                       font-size: 14px;
@@ -420,7 +448,7 @@ a {
       </tr>
       <tr>
         <td>
-          <table class="signature" style="
+          <table class="signature-holder" style="
                 width: 100%;
                 max-width: 600px;
                 min-width: 320px;
@@ -471,12 +499,12 @@ a {
                     ">
                   OCCUPATIONAL HEALTH NURSE
                 </p>
-                <p class="msg-body" style="
+                <p class="msg-body zee-license" style="
                       padding: 0;
                       margin: 0;
                       font-size: 14px;
                       font-weight: 400;
-                      color: #00386c;
+                      color: #00386c !important;
                     ">
                   License number: 0847170
                 </p>
