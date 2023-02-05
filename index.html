@@ -85,18 +85,27 @@
           border-style: none;
           border-collapse: collapse;
           background-image:
-            url('borders/top left.png'),
+            url('borders/top-left.png'),
+            url('borders/top-right.png'),
+            url('borders/bottom-left.png'),
+            url('borders/bottom-right.png'),
             url('borders/top.png'),
             url('borders/bottom.png'),
             url('borders/left.png'),
             url('borders/right.png');
           background-position:
             top left,
+            top right,
+            bottom left,
+            bottom right,
             top center,
             bottom center,
             left center,
             right center;
           background-repeat:
+            no-repeat,
+            no-repeat,
+            no-repeat,
             no-repeat,
             repeat-x,
             repeat-x,
@@ -131,7 +140,7 @@
                     font-size: 0;
                     width: 100%;
                     height: 100%;
-                    padding: 60px 0 40px;
+                    padding: 60px 0 60px;
                   " width="100%" valign="center">
                 <a href="https://www.hcc.com.ph/" target="_blank" rel="noopener" title="Hilmarc's Construction Corporation" style="text-decoration: none"><img src="logo/logo.png" title="Hilmarc's Construction Corporation" alt="HCC" height="50" style="
                         border-radius: 4px;
@@ -182,14 +191,6 @@
               </td>
             </tr>
 
-            <!--<div class="border" style="-->
-            <!--  position: absolute;-->
-            <!--  inset: 0;-->
-            <!--  border: 20px solid;-->
-            <!--  border-image-source: url('borders/border.png');-->
-            <!--  border-image-slice: 30 fill; -ms-interpolation-mode: bicubic;">-->
-            <!--</div>-->
-
           </table>
         </td>
       </tr>
@@ -215,7 +216,7 @@
                     width: 100%;
                     max-width: 600px;
                     min-width: 320px;
-                    padding: 0 40px;
+                    padding: 0 60px;
                   ">
                 <p style="
                       padding: 0;
@@ -264,7 +265,7 @@
                     width: 100%;
                     max-width: 600px;
                     min-width: 320px;
-                    padding: 40px;
+                    padding: 60px;
                   ">
                 <p style="
                       padding: 0;
