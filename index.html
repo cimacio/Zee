@@ -76,7 +76,6 @@
     </table>
 
     <table class="main" style="
-          position: relative;
           width: 100%;
           max-width: 600px;
           min-width: 320px;
@@ -86,9 +85,23 @@
           border-spacing: 0;
           border-style: none;
           border-collapse: collapse;
+          background-image:
+            url('borders/top.webp'),
+            url('borders/bottom.webp'),
+            url('borders/left.webp'),
+            url('borders/right.webp');
+          background-position:
+            top center,
+            bottom center,
+            left center,
+            right center;
+          background-repeat:
+            repeat-x,
+            repeat-x,
+            repeat-y,
+            repeat-y;
           " width="100%">
       <tr>
-
         <td style="
               width: 100%;
               max-width: 600px;
@@ -166,15 +179,15 @@
                 </a>
               </td>
             </tr>
-            
-            <div class="border" style="
-              position: absolute;
-              inset: 0;
-              border: 20px solid;
-              border-image-source: url('borders/border.webp');
-              border-image-slice: 30 fill; -ms-interpolation-mode: bicubic;">
-            </div>
-            
+
+            <!--<div class="border" style="-->
+            <!--  position: absolute;-->
+            <!--  inset: 0;-->
+            <!--  border: 20px solid;-->
+            <!--  border-image-source: url('borders/border.webp');-->
+            <!--  border-image-slice: 30 fill; -ms-interpolation-mode: bicubic;">-->
+            <!--</div>-->
+
           </table>
         </td>
       </tr>
