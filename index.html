@@ -4,7 +4,8 @@
 <head>
   <!--[if gte mso 9]><xml><o:officedocumentsettings><o:allowpng><o:pixelsperinch>96</o:pixelsperinch></o:officedocumentsettings></xml><![endif]-->
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <meta name="color-scheme" content="light dark">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="format-detection" content="date=no" />
   <meta name="format-detection" content="address=no" />
@@ -27,14 +28,118 @@
 
 </head>
 
+<style type="text/css">
+
+/* Dark mode settings */
+:root {
+  color-scheme: light dark;
+}
+
+
+body {
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+td, div {
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  border-collapse: collapse !important;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  mso-line-height-rule:exactly;
+}
+
+table, tr, td, div{
+  padding: 0;
+  vertical-align: top;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+p, span {
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+      @media screen and (max-width:480px) {
+        
+        .logo {
+          width: 40px !important;
+        }
+        
+        .company-name {
+          font-size: 16px !important;
+        }
+        .company-address {
+          font-size: 9.3px !important;
+        }
+        
+        .company-contacts {
+          font-size: 9.5px !important;
+        }
+        
+        .zee-name {
+          font-size: 16px !important;
+        }
+        
+        .zee-position {
+          font-size: 14.7px !important;
+        }
+        
+        .msg-body {
+          font-size: 12px !important;
+          text-align: left !important;
+        }
+        
+      }
+      
+      /* Dark mode adjustments */
+    @media (prefers-color-scheme: dark) {
+      
+      body, .wrapper {
+        background-color: #00386c !important;
+      }
+      body, p, a, div, td, table {
+        color: #f1f1f1 !important;
+      }
+    }
+
+</style>
+
 <body class="body" style="
-      padding: 0;
-      margin: 0;
-      display: block;
+      background-color: #e7eef7;
+      width: 100% !important;
       min-width: 100%;
-      width: 100%;
-      background: #fff;
-      -webkit-text-size-adjust: none;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      margin: 0;
+      Margin: 0;
+      padding: 0;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
     ">
   <!--[if !gte mso 9]>-->
 
@@ -59,6 +164,7 @@
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         background-color: #e7eef7;
+        -webkit-font-smoothing: antialiased;
       ">
 
     <table class="spacer-top" style="
@@ -68,7 +174,9 @@
           border-collapse: collapse;
           border-width: 0;
           border-spacing: 0;
-          border-style: none;" width="100%">
+          border-style: none;
+          -webkit-font-smoothing: antialiased;
+          " width="100%" border="0" cellSpacing="0" cellPadding="0">
       <tr>
         <td class="spacer-top" style="height: 30px;background: inherit; width: 100%; max-width: 600px; min-width: 320px;">
         </td>
@@ -112,7 +220,7 @@
             repeat-y,
             repeat-y;
           background-color: #e7eef7;
-          " width="100%">
+          " width="100%" border="0" cellSpacing="0" cellPadding="0">
       <tr>
         <td style="
               width: 100%;
@@ -130,7 +238,7 @@
                 border-width: 0;
                 border-spacing: 0;
                 border-style: none;
-                " width="100%">
+                " width="100%" border="0" cellSpacing="0" cellPadding="0">
             <tr>
               <td style="
                     width: 100%;
@@ -143,12 +251,13 @@
                     height: 100%;
                     padding: 60px 0 60px;
                   " width="100%" valign="center">
-                <a href="https://www.hcc.com.ph/" target="_blank" rel="noopener" title="Hilmarc's Construction Corporation" style="text-decoration: none"><img src="logo/logo.png" title="Hilmarc's Construction Corporation" alt="HCC" height="50" style="
-                        border-radius: 4px;
-                        margin-right: 10px;
-                        text-align: right;
-                        vertical-align: top;
-                        -ms-interpolation-mode: bicubic;
+                <a href="https://www.hcc.com.ph/" target="_blank" rel="noopener" title="Hilmarc's Construction Corporation" style="text-decoration: none;"><img class="logo" src="logo/logo.png" title="Hilmarc's Construction Corporation" alt="HCC" style="
+                    width: 50px;
+                    border-radius: 4px;
+                    margin-right: 10px;
+                    text-align: right;
+                    vertical-align: top;
+                    -ms-interpolation-mode: bicubic;
                       " />
 
                   <div class="company-details" style="
@@ -166,11 +275,11 @@
                           margin: 0;
                           font-size: 22px;
                           font-weight: 900;
-                        ">
-                      Hilmarc's Construction Corporation
+                        "> Hilmarc&#x27s Construction Corporation
                     </p>
                     <br />
-                    <p style="
+                    <p class="company-address"
+                        style="
                           padding: 0;
                           margin: 0;
                           font-size: 12.6px;
@@ -179,7 +288,8 @@
                       1835, E. Rodriguez Sr. Avenue, Quezon City,
                       Metro Manila, Philippines
                     </p>
-                    <p style="
+                    <p class="company-contacts"
+                        style="
                           padding: 0;
                           margin: 0;
                           font-size: 12.8px;
@@ -211,15 +321,15 @@
                 border-width: 0;
                 border-spacing: 0;
                 border-style: none;
-              ">
+              " border="0" cellSpacing="0" cellPadding="0" width="100%">
             <tr>
-              <td style="
+              <td class="msg-body" style="
                     width: 100%;
                     max-width: 600px;
                     min-width: 320px;
                     padding: 0 60px;
                   ">
-                <p style="
+                <p class="msg-body" style="
                       padding: 0;
                       margin: 0;
                       font-size: 14px;
@@ -259,16 +369,16 @@
                 border-collapse: collapse;
                 border-width: 0;
                 border-spacing: 0;
-                border-style: none;
-              ">
+                border-style: none;"
+                width="100%" border="0" cellSpacing="0" cellPadding="0">
             <tr>
-              <td style="
+              <td class="signature" style="
                     width: 100%;
                     max-width: 600px;
                     min-width: 320px;
                     padding: 60px;
                   ">
-                <p style="
+                <p class="zee-name" style="
                       padding: 0;
                       margin: 0;
                       font-size: 18px;
@@ -277,7 +387,7 @@
                     ">
                   JAY AR ADLAON CIMACIO, RN
                 </p>
-                <p style="
+                <p class="zee-position" style="
                       padding: 0;
                       margin: 0;
                       font-size: 16.7px;
@@ -286,7 +396,7 @@
                     ">
                   OCCUPATIONAL HEALTH NURSE
                 </p>
-                <p style="
+                <p class="msg-body" style="
                       padding: 0;
                       margin: 0;
                       font-size: 14px;
