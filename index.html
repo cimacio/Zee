@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" style="width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" style="width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0;margin:0;">
 <head>
 
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta name="color-scheme" content="light">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="format-detection" content="date=no" />
@@ -30,9 +30,17 @@
 
 <style type="text/css">
 
-/* Dark mode settings */
-:root {
-  color-scheme: light;
+/* Reset */
+html, body {
+  prefers-color-scheme: light;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.main {
+  box-sizing: border-box;
 }
 
 body {
@@ -51,7 +59,7 @@ table {
   line-height: 1;
 }
 
-td, div {
+td {
   word-wrap: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -67,19 +75,20 @@ td, div {
   line-height: 1;
 }
 
-table, tr, td, div{
+table, tr, td {
   padding: 0;
   vertical-align: top;
   direction: ltr;
   -webkit-font-smoothing: antialiased;
   font-family: Montserrat, helvetica, sans-serif;
   line-height: 1;
+  mso-table-lspace:0;
+  mso-table-rspace:0;
 }
 
-p, span {
+p {
   -webkit-font-smoothing: antialiased;
   font-family: Montserrat, helvetica, sans-serif;
-  line-height: 1;
 }
 
 img {
@@ -93,23 +102,41 @@ a {
 
       @media screen and (max-width:599px) {
         
+        .wrapper {
+          padding-bottom: 0 !important;
+          background-image:
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/top.png'),
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/bottom.png') !important;
+          background-position:
+            top 20px center,
+            bottom 20px center;
+          background-repeat: repeat-x, repeat-x;
+          background-size: 6%, 8%;
+        }
+        
+        .spacer-top, .spacer-bottom {
+          height: 30px !important;
+        }
+        
+        
         .main {
           background-image: none !important;
         }
         
         .company-content {
-          padding: 40px 0 40px !important;
+          padding: 30px 0 50px !important;
         }
         
         .content {
-          padding: 0 40px !important;
+          padding: 0 30px !important;
         }
         
         .signature {
-          padding: 40px !important;
+          padding: 50px 30px 50px !important;
         }
         
         .logo {
+          margin-right: 5px !important;
           width: 40px !important;
         }
         
@@ -125,16 +152,16 @@ a {
         }
         
         .zee-name {
-          font-size: 16px !important;
+          font-size: 14px !important;
         }
         
         .zee-position {
-          font-size: 14.7px !important;
+          font-size: 12.8px !important;
         }
         
         .msg-body {
           font-size: 12px !important;
-          text-align: left !important;
+          /* text-align: left !important; */
         }
         
       }
@@ -158,9 +185,9 @@ a {
 </style>
 
 <body class="body" style="
-      background-color: #e7eef7;
       width: 100% !important;
       min-width: 100%;
+      background-color: #e7eef7;
       -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
       margin: 0;
@@ -173,8 +200,6 @@ a {
       direction: ltr;
     ">
   
-    <div style="display:none !important;visibility:hidden;mso-hide:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Pre-employment Requirements</div>
-    <div style="display:none !important;visibility:hidden;mso-hide:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;"> ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌</div>
   <center class="wrapper" aria-hidden="true" style="
         wwidth: 100%;
         table-layout: fixed;
@@ -182,11 +207,17 @@ a {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         background-color: #e7eef7;
+        background-image: none;
+        margin: 0;
+        Margin: 0;
+        padding-bottom: 60px;
         -webkit-font-smoothing: antialiased;
         direction: ltr;
       ">
-
-    <table class="spacer-top" style="
+    
+    <div style="display:none !important;visibility:hidden;mso-hide:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Pre-employment Requirements</div>
+    <div style="display:none !important;visibility:hidden;mso-hide:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;"> ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌</div>
+    <table class="spacer" style="
           width: 100%;
           max-width: 600px;
           min-width: 320px;
@@ -214,14 +245,14 @@ a {
           border-style: none;
           border-collapse: collapse;
           background-image:
-            url('https://github.com/cimacio/Zee/blob/main/borders/top-left.png'),
-            url('https://github.com/cimacio/Zee/blob/main/borders/top-right.png'),
-            url('https://github.com/cimacio/Zee/blob/main/borders/bottom-left.png'),
-            url('https://github.com/cimacio/Zee/blob/main/borders/bottom-right.png'),
-            url('https://github.com/cimacio/Zee/blob/main/borders/top.png'),
-            url('https://github.com/cimacio/Zee/blob/main/borders/bottom.png'),
-            url('https://github.com/cimacio/Zee/blob/main/borders/left.png'),
-            url('https://github.com/cimacio/Zee/blob/main/borders/right.png');
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/top-left.png'),
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/top-right.png'),
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/bottom-left.png'),
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/bottom-right.png'),
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/top.png'),
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/bottom.png'),
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/left.png'),
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/right.png');
           background-position:
             top left,
             top right,
@@ -249,7 +280,9 @@ a {
             6%,
             2%,
             2%;
-          background-color: #e7eef7;
+          -webkit-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
           " width="100%" border="0" cellSpacing="0" cellPadding="0">
       <tr>
         <td style="
@@ -305,7 +338,7 @@ a {
                 mso-line-height-rule:exactly;
                 " width="100%" valign="center">
                 <a href="https://www.hcc.com.ph/index.php/about-us" target="_blank" rel="noopener" title="Hilmarc's Construction Corporation" style="text-decoration: none;"> 
-                <img class="logo" src="https://github.com/cimacio/Zee/blob/main/logo/logo.png" title="Hilmarc's Construction Corporation" alt="HCC" style="
+                <img class="logo" src="https://raw.githubusercontent.com/cimacio/Zee/main/logo/logo.png" title="Hilmarc's Construction Corporation" alt="HCC" style="
                     width: 50px;
                     border-radius: 4px;
                     margin-right: 10px;
@@ -363,7 +396,7 @@ a {
                           font-weight: 200;
                           line-height: 1.2;
                         ">
-                      +63 (2) 8 726 9471<span style="font-weight: 500">  |  </span>+63 (2) 8 654 4152<span style="font-weight: 500">  |  </span>+63 (2) 8 654 4159
+                      +63 (2) 8 726 9471<span style="font-weight: 500">  •  </span>+63 (2) 8 654 4152<span style="font-weight: 500">  •  </span>+63 (2) 8 654 4159
                     </p>
                   </div>
                 </a>
