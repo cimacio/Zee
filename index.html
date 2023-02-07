@@ -5,7 +5,7 @@
 
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <meta name="color-scheme" content="dark">
+  <meta name="color-scheme" content="light dark">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="format-detection" content="date=no" />
   <meta name="format-detection" content="address=no" />
@@ -26,6 +26,7 @@
   <!--[if gte mso 9]><xml> <o:OfficeDocumentSettings> <o:AllowPNG></o:AllowPNG> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml><![endif]-->
 
   <style type="text/css">
+
     :root {
       color-scheme: light dark;
     }
@@ -107,9 +108,9 @@
       .wrapper {
         padding-bottom: 0 !important;
         background-image:
-          url('borders/top.png'),
-          url('borders/bottom.png'),
-          url('borders/mid.png') !important;
+          url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/top.png'),
+          url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/bottom.png'),
+          url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/mid.png') !important;
         background-position:
           top 20px center,
           bottom 20px center,
@@ -202,11 +203,53 @@
       box-sizing: border-box;
       -webkit-font-smoothing: antialiased;
       direction: ltr;
+      background: #fff;
     ">
 
-  <div style="background: #fff;">
-    <div style="background: #fff; mix-blend-mode: screen;">
-      <div style="background: #fff; mix-blend-mode: difference;">
+  <center class="back-up-bg" style="
+      background: #000;
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      table-layout: fixed;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      Margin: 0;
+      -webkit-font-smoothing: antialiased;
+      direction: ltr;        
+  ">
+  <center class="blend-screen" style="
+      background: #000;
+      mix-blend-mode: screen;
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      table-layout: fixed;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      Margin: 0;
+      -webkit-font-smoothing: antialiased;
+      direction: ltr;     
+  ">
+  <center class="blend-difference" style="
+    background: #000;
+    mix-blend-mode: difference;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    table-layout: fixed;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    Margin: 0;
+    -webkit-font-smoothing: antialiased;
+    direction: ltr;     
+  ">
 
         <center class="wrapper" aria-hidden="true" style="
         position: absolute;
@@ -218,7 +261,8 @@
         box-sizing: border-box;
         background-color: #e7eef7;
         background-image:
-          url('borders/mid.png');
+          url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/mid.png');
+        background-repeat: repeat;
         margin: 0;
         Margin: 0;
         padding-bottom: 60px;
@@ -261,15 +305,15 @@
           border-style: none;
           border-collapse: collapse;
           background-image:
-            url('borders/top-left.png'),
-            url('borders/top-right.png'),
-            url('borders/bottom-left.png'),
-            url('borders/bottom-right.png'),
-            url('borders/top.png'),
-            url('borders/bottom.png'),
-            url('borders/left.png'),
-            url('borders/right.png'),
-            url('borders/mid.png');
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/top-left.png'),
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/top-right.png'),
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/bottom-left.png'),
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/bottom-right.png'),
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/top.png'),
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/bottom.png'),
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/left.png'),
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/right.png'),
+            url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/mid.png');
           background-position:
             top left,
             top right,
@@ -355,7 +399,7 @@
                 mso-line-height-rule: exactly;
                 " width="100%" valign="center">
                       <a href="https://www.hcc.com.ph/index.php/about-us" target="_blank" rel="noopener" title="Hilmarc's Construction Corporation" style="text-decoration: none;"> 
-                        <img class="logo" src="logo/logo.png" title="Hilmarc's Construction Corporation" alt="HCC" style="
+                        <img class="logo" src="https://raw.githubusercontent.com/cimacio/Zee/main/logo/logo.png" title="Hilmarc's Construction Corporation" alt="HCC" style="
                     width: 50px;
                     border-radius: 4px;
                     margin-right: 10px;
@@ -574,10 +618,10 @@
           </tr>
         </table>
         
-      </center>
-  </div>
-  </div>
-  </div>
+      </table></center>
+  </center>
+  </center>
+</center>
 </body>
 
 </html>
