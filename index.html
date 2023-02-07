@@ -4,6 +4,7 @@
 
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="color-scheme" content="dark">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="format-detection" content="date=no" />
   <meta name="format-detection" content="address=no" />
@@ -29,6 +30,7 @@
 
 /* Reset */
 html, body {
+  prefer-color-scheme: dark;
   margin: 0 auto !important;
   padding: 0 !important;
   height: 100% !important;
@@ -187,7 +189,7 @@ a {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         background-color: #e7eef7;
-        background-image: none;
+        background-image: url('borders/mid.png');
         margin: 0;
         Margin: 0;
         padding-bottom: 60px;
@@ -232,7 +234,8 @@ a {
             url('borders/top.png'),
             url('borders/bottom.png'),
             url('borders/left.png'),
-            url('borders/right.png');
+            url('borders/right.png'),
+            url('borders/mid.png');
           background-position:
             top left,
             top right,
@@ -241,7 +244,8 @@ a {
             top center,
             bottom center,
             left center,
-            right center;
+            right center,
+            top center;
           background-repeat:
             no-repeat,
             no-repeat,
@@ -250,7 +254,8 @@ a {
             repeat-x,
             repeat-x,
             repeat-y,
-            repeat-y;
+            repeat-y,
+            repeat;
           background-size:
             6%,
             6%,
@@ -259,7 +264,8 @@ a {
             6%,
             6%,
             2%,
-            2%;
+            2%,
+            auto;
           " width="100%" border="0" cellSpacing="0" cellPadding="0">
       <tr>
         <td style="
