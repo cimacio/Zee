@@ -27,11 +27,8 @@
 
   <style type="text/css">
 
-    :root {
-      color-scheme: light dark;
-    }
-
     /* Reset */
+
     html,
     body {
       margin: 0 auto !important;
@@ -43,6 +40,10 @@
     .wrapper,
     .main {
       box-sizing: border-box;
+    }
+
+    center {
+      -ms-interpolation-mode: bicubic;
     }
 
     body {
@@ -101,90 +102,8 @@
 
     a {
       text-decoration: none;
+      -ms-interpolation-mode: bicubic;
     }
-
-    @media screen and (max-width:599px) {
-
-      .wrapper {
-        padding-bottom: 0 !important;
-        background-image:
-          url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/top.png'),
-          url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/bottom.png'),
-          url('https://raw.githubusercontent.com/cimacio/Zee/main/borders/mid.png') !important;
-        background-position:
-          top 20px center,
-          bottom 20px center,
-          left center !important;
-        background-repeat:
-          repeat-x,
-          repeat-x,
-          repeat !important;
-        background-size:
-          6%,
-          8%,
-          100% !important;
-      }
-
-      .spacer-top,
-      .spacer-bottom {
-        height: 30px !important;
-      }
-
-
-      .main {
-        background-image: none !important;
-      }
-
-      .company-content {
-        padding: 30px 0 50px !important;
-      }
-
-      .content {
-        padding: 0 30px !important;
-      }
-
-      .signature {
-        padding: 50px 30px 50px !important;
-      }
-
-      .logo {
-        margin-right: 5px !important;
-        width: 40px !important;
-      }
-
-      .company-name {
-        font-size: 16px !important;
-      }
-
-      .company-address {
-        font-size: 9.3px !important;
-      }
-
-      .company-contacts {
-        font-size: 9.5px !important;
-      }
-
-      .zee-name {
-        font-size: 14px !important;
-      }
-
-      .zee-position {
-        font-size: 12.8px !important;
-      }
-
-      .msg-body {
-        font-size: 12px !important;
-        text-align: left !important;
-      }
-
-    }
-
-    /* Dark mode adjustments */
-/*     @media (prefers-color-scheme: dark) {
-  .main {
-    
-  }
-} */
     
   </style>
 
@@ -203,7 +122,6 @@
       box-sizing: border-box;
       -webkit-font-smoothing: antialiased;
       direction: ltr;
-      background: #fff;
     ">
 
   <center class="back-up-bg" style="
@@ -217,6 +135,7 @@
       box-sizing: border-box;
       margin: 0;
       Margin: 0;
+      padding: 0;
       -webkit-font-smoothing: antialiased;
       direction: ltr;        
   ">
@@ -232,6 +151,7 @@
       box-sizing: border-box;
       margin: 0;
       Margin: 0;
+      padding: 0;
       -webkit-font-smoothing: antialiased;
       direction: ltr;     
   ">
@@ -247,6 +167,7 @@
     box-sizing: border-box;
     margin: 0;
     Margin: 0;
+    padding: 0;
     -webkit-font-smoothing: antialiased;
     direction: ltr;     
   ">
