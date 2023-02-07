@@ -1,0 +1,162 @@
+<!doctype html>
+<html ⚡4email data-css-strict>
+<head>
+<meta charset="utf-8">
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
+<script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+<style amp4email-boilerplate>body{visibility:hidden}</style>
+<style amp-custom>
+    #container {
+        height: auto;
+        width: 100%;
+    }
+    section {
+        padding: 20px;
+    }
+    button {
+        margin: 20px 0 0 0;
+    }
+    figure {
+        margin: 0;
+    }
+    section h3 {
+        background: linear-gradient(to right, #ec4e38 0%, #cd00cd 100%);
+        padding: 4px;
+    }
+    .dataChart {
+        margin: 0 0 20px 0;
+    }
+    .dataChart table tr td {
+        height: 24px;
+        text-align: left;
+    }
+    .dataChart table tr td:nth-child(2):hover {
+        opacity: .65;
+        transition: opacity 0.2s ease-out;
+    }
+    .dataChart, .dataChart table {
+        width: 100%;
+    }
+    /* LIGHT/DARK MODE STYLES */
+    .darkStyles {
+        background-color: #202124;
+        color: #ffffff;
+    }
+    .lightStyles {
+        background-color: #ffffff;
+        color: #1b1b1b;
+    }
+    @media only screen and (max-width: 765px) {
+    #container {
+        width: auto;
+    }
+}
+  </style>
+</head>
+<body id="container" [class]="colorScheme[mode].style || ''">
+    <amp-state id="colorScheme">
+        <script type="application/json">
+            {
+                "lightMode": {
+                    "style": "lightStyles"
+                },
+                "darkMode": {
+                    "style": "darkStyles"
+                }
+            }
+        </script>
+    </amp-state>
+    <div>
+        <section>
+            <h1>sample AMP email light/dark modes</h1>
+            <p>AMP email utilizing <code>amp-bind</code> to create light/dark color schemes</p>
+            <hr>
+            <h4>Select color scheme:</h4>
+            <select on="change:AMP.setState({ mode: event.value })">
+                <option value="lightMode">Light Mode</option>
+                <option value="darkMode">Dark Mode</option>
+            </select>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur earum excepturi sapiente ducimus repudiandae. Quos ullam provident eaque aspernatur necessitatibus odit, iste quae neque alias molestias aperiam labore reiciendis voluptas.</p>
+            <amp-img src="https://picsum.photos/400/200" width="200" height="100" layout="fixed" alt="Sample pic 1"></amp-img>
+            <h1>Voluptatem ab officia veritatis error quasi obcaecati maxime totam, saepe unde?</h1>
+            <amp-img src="https://picsum.photos/1200/400" width="600" height="200" layout="responsive" alt="Sample pic 2"></amp-img>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur earum excepturi sapiente ducimus repudiandae. Quos ullam provident eaque aspernatur necessitatibus odit, iste quae neque alias molestias aperiam labore reiciendis voluptas.</p>
+            <h2>Porro ipsa suscipit illo!</h2>
+            <amp-anim src="https://media.tenor.com/zBiP5wuKb8UAAAAi/taco-tuesday-taco.gif" width="95" height="100"></amp-anim>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatem rerum nisi! Quam animi possimus, dolores, amet iure consequatur, quos magnam dolorem enim cumque, nisi illum quia excepturi odio nam.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Commodi dolores velit, officia sit dolore sunt, illum! Harum earum, commodi reiciendis doloribus repellendus, vel, beatae reprehenderit rem rerum eligendi neque, saepe.</p>
+            <h3>Perspiciatis dolorem totam officia</h3>
+            <table class="dataChart" cellspacing="0" cellpadding="0">
+                <caption>Horizontal Data Bar Chart</caption>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td style="height: 24px; width: 20%;" height="24" width="20%"><amp-fit-text width="auto" height="24" layout="fixed-height" max-font-size="16">Data bar #1</amp-fit-text></td>
+                                <td style="background-color: #0dbd67; height: 24px; width: 65%;" height="24" width="65%"></td>
+                                <td style="height: 24px; width: 15%;" height="24" width="15%"><amp-fit-text width="auto" height="24" layout="fixed-height" max-font-size="16">Label #1</amp-fit-text></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td style="height: 24px; width: 20%;" height="24" width="20%"><amp-fit-text width="auto" height="24" layout="fixed-height" max-font-size="16">Data bar #2</amp-fit-text></td>
+                                <td style="background-color: #0dbd67; height: 24px; width: 55%;" height="24" width="55%"></td>
+                                <td style="height: 24px; width: 25%;" height="24" width="25%"><amp-fit-text width="auto" height="24" layout="fixed-height" max-font-size="16">Label #2</amp-fit-text></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td style="height: 24px; width: 20%;" height="24" width="20%"><amp-fit-text width="auto" height="24" layout="fixed-height" max-font-size="16">Data bar #3</amp-fit-text></td>
+                                <td style="background-color: #0dbd67; height: 24px; width: 25%;" height="24" width="25%"></td>
+                                <td style="height: 24px; width: 55%;" height="24" width="55%"><amp-fit-text width="auto" height="24" layout="fixed-height" max-font-size="16">Label #3</amp-fit-text></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td style="height: 24px; width: 20%;" height="24" width="20%"><amp-fit-text width="auto" height="24" layout="fixed-height" max-font-size="16">Data bar #4</amp-fit-text></td>
+                                <td style="background-color: #0dbd67; height: 24px; width: 5%;" height="24" width="5%"></td>
+                                <td style="height: 24px; width: 75%;" height="24" width="75%"><amp-fit-text width="auto" height="24" layout="fixed-height" max-font-size="16">Label #4</amp-fit-text></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td style="height: 24px; width: 20%;" height="24" width="20%"><amp-fit-text width="auto" height="24" layout="fixed-height" max-font-size="16">Data bar #5</amp-fit-text></td>
+                                <td style="background-color: #0dbd67; height: 24px; width: 35%;" height="24" width="35%"></td>
+                                <td style="height: 24px; width: 45%;" height="24" width="45%"><amp-fit-text width="auto" height="24" layout="fixed-height" max-font-size="16">Label #5</amp-fit-text></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, animi! Libero odit fugit quia nostrum explicabo, accusantium praesentium dignissimos expedita sed, aspernatur, ullam eveniet sunt officiis aut pariatur velit ipsam!</p>
+            <h3>Aut laudantium, quidem obcaecati</h3>
+            <figure>
+                <amp-img src="https://picsum.photos/1200/700" width="600" height="350" layout="responsive" alt="Sample pic 3"></amp-img>
+                <figcaption>A figcaption for image #3</figcaption>
+            </figure>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, optio. Placeat, pariatur doloremque ad, nemo iusto velit animi quam id inventore reiciendis in beatae ipsum ut reprehenderit ex vero sit.</p>
+        </section>
+    </div>
+</body>
+</html>
+
+
+Resources
